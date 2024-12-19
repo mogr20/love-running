@@ -30,7 +30,10 @@ header {
     /* second value is offset for shadow, negative is above the element, and positive is a below element shadow */
     /* third value is hard/softness of shadowing. Lower number is a harsher shadowing */
     /* fourth value is colour of shadow. Defaults to black #000000, which is often too dark */
-    box-shadow: 0 2px 8px #3a3a3a;
+    box-shadow: 0 4px 4px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a {
@@ -53,8 +56,23 @@ nav {
     width: 100%;
     left: 0;
     padding: 0 1rem;
-    box-shadow: 0 2px 8px #3a3a3a;
+    box-shadow: 0 4px 4px #3a3a3a;
     display: none;
+    /* The child should start at the bottom of the nav */
+    top: 100%;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
 }
 
 /* Main Content */
@@ -62,6 +80,7 @@ main {
     background-color: lightblue;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
+    margin-top: 50px;
 }
 
 /* Footer */
