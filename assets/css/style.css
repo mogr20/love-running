@@ -21,7 +21,16 @@ body {
 
 /* Header */
 header {
-    background-color: lightcoral;
+    background-color: #FFFFFF;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    /* first value if negative is shadow leans to the left, and positive leans to the right */
+    /* second value is offset for shadow, negative is above the element, and positive is a below element shadow */
+    /* third value is hard/softness of shadowing. Lower number is a harsher shadowing */
+    /* fourth value is colour of shadow. Defaults to black #000000, which is often too dark */
+    box-shadow: 0 2px 8px #3a3a3a;
 }
 
 /* logo header */
