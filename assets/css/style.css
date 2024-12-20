@@ -158,13 +158,13 @@ main {
     margin-bottom: 20px;
 }
 
-#reasons > h2 {
+#reasons h2 {
     font-size: 280%;
     text-align: center;
     margin-bottom: 20px;
 }
 
-#benefits div {
+#benefits-physical > div, #benefits-mental > div {
     line-height: 20px;
     margin-bottom: 20px;
 }
@@ -176,6 +176,13 @@ main {
 #benefits hr {
     border-top: 1px solid #3a3a3a;
     margin: 5px 0;
+}
+
+#circle-cover-bg {
+    background: url(../images/reasons-image.webp) no-repeat top center/cover;
+    width: 90vw;
+    height: 90vw;
+    margin-bottom: 20px;
 }
 
 /* Media query: tablets and larger (768px and higher) */
