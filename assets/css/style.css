@@ -183,6 +183,16 @@ main {
     width: 90vw;
     height: 90vw;
     margin-bottom: 20px;
+    /* makes the image a circle */
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#benefits-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Media query: tablets and larger (768px and higher) */
