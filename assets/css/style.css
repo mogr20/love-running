@@ -19,6 +19,14 @@ body {
     font-family: "Rubik", sans-serif;
 }
 
+/* logo header */
+h1, h2, h3 {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
+
 /* Header */
 header {
     background-color: #FFFFFF;
@@ -39,14 +47,6 @@ header {
 header a {
     text-decoration: none;
     color: inherit;
-}
-
-/* logo header */
-h1 {
-    font-family: "Oswald", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
 }
 
 /* Navbar styles with dropdown toggle */
@@ -75,6 +75,8 @@ nav {
     font-size: 2rem;
 }
 
+
+
 /* Main Content */
 main {
     
@@ -89,6 +91,23 @@ main {
     width: 100%;
     /* image url, don't repeat, center horizontally and vertically, and automatically size/crop itself to fit the whole hero section */
     background: url("../images/hero-image.webp") no-repeat center center/cover;
+    position: relative;
+}
+
+#cover-text {
+    /* Last rgba value here sets the opacity, so it is translucent */
+    background-color: rgba(241, 109, 107, .7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+#cover-text > h2, #cover-text > h3 {
+    color: #ffffff;
 }
 
 /* Footer */
@@ -161,6 +180,12 @@ main {
     main {
         /* Push main content down to accomodate larger header */
         margin-top: 80px;
+    }
+
+    /* Hero */
+    #cover-text {
+        width: 300px;
+        right: 50px;
     }
 }
 
