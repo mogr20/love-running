@@ -234,6 +234,9 @@ main {
     line-height: 0;
 }
 
+/* Signup */
+
+
 /* Media query: large or larger landscape phones (576px and up) */
 @media screen and (min-width: 576px) {
     /* Gallery */
