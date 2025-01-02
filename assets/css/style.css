@@ -234,6 +234,15 @@ main {
     line-height: 0;
 }
 
+/* Media query: large or larger landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    /* Gallery */
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
 /* Media query: tablets and larger (768px and higher) */
 @media screen and (min-width: 768px) {
 
@@ -291,6 +300,11 @@ main {
         text-align: end;
         align-self: flex-end;
     }
+
+    /* Gallery */
+    #photos {
+        column-count: 3;
+    }
 }
 
 /* Media query: laptops and larger (992px and higher) */
@@ -325,5 +339,10 @@ main {
 
     #benefits-mental > div {
         align-self: flex-start;
+    }
+
+    /* Gallery */
+    #photos {
+        column-count: 4;
     }
 }
